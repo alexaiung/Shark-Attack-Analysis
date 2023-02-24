@@ -1,9 +1,9 @@
-# Analysis of Fatality of Shark Attacks in USA and Australia
+# 🦈 Analysis of Fatality of Shark Attacks in USA and Australia 🦈
  
 This project will analyse a dataset from global shark attack file which records attacks from all the globe. The objective is to answer the hypothesis: is the fatality rate in Australia bigger than in USA, the two countries with most records? The answer could help guiding business questions in a life insurance company, for example, and could be interesting for further investigation - for example, if the answer of the hypothesis is positive, why is that so?
 
 ## Requisites
-This analysis uses the following libraries: pandas, numpy and seaborn. The dataset can be found in <a href=https://www.kaggle.com/datasets/teajay/global-shark-attacks>Kaggle</a>
+This analysis uses the following libraries: pandas, numpy and seaborn. The dataset can be found in <a href=https://www.kaggle.com/datasets/teajay/global-shark-attacks>Kaggle</a>.
 
 ## Initial Exploratory Analysis and Data Cleaning
 The dataset has 25723 rows, though most of it were null. Some columns were partially duplicated and not useful for the analysis and were excluded, such as 'pdf', 'href formula', 'href', 'Case Number.1', 'Case Number.2', 'original order', 'Unnamed: 22' and 'Unnamed: 23'. The empty rows were excluded too.
@@ -20,7 +20,7 @@ A simple code showed the .value_counts() and unique values for all the columns, 
 
 No duplicated rows were found after the exclusion of the empty ones.
 
-## Approaching the Hypothesis
+## Analysing the Hypothesis
 With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
 
 The .groupby() method allowed us to summarize all the records for each country and year, as well all the fatal cases. The 'fatality_rate' column was created with the result of the division of the fatal cases by the total_cases. For better analysis, I chose to reduce the scope of the analysis to the 1900s and on.
