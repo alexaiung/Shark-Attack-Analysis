@@ -67,5 +67,9 @@ Trying to understand better, I analysed the mean fatality rate by decade. The fi
 
 ![final_fatality_mean](https://user-images.githubusercontent.com/110355804/221356928-83556fa0-1eaa-407f-a8fe-5d0384f4ad28.png)
 
+The division of the cases by decade opened the possibility of analysing the data prior to 1960s, since 1900s, which was discarded previously from the analysis. The following plot shows us that the hypothesis is also correct in those decades, though in the 50s the mean fatality rates of the two countries got curiously close.
+
+![final_fatality_mean_1900](https://user-images.githubusercontent.com/110355804/221357991-4cb0695d-3602-499b-812a-59fbdf18e491.png)
+
 ## Conclusion
 The situation of Australia is clearly worse than in the USA in terms of fatalities. This can be due several reasons which would require further analysis, but we already answered the hypothesis and could make proper decisions about, for example, how to adequately price a life insurance pertaining to shark attacks in Australia compared to the USA; or, in a scientific investigation, we would have a reason to deepen our analysis.
