@@ -21,7 +21,20 @@ A simple code showed the .value_counts() and unique values for all the columns, 
 No duplicated rows were found after the exclusion of the empty ones.
 
 ## Analysing the Hypothesis
-With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
+With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that we have a good amount of reports to analyse.there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
+
+<table>
+ <tr>
+  <th></th>
+  <th>USA</th>
+  <th>Australia</th>
+ </tr>
+ <tr>
+  <td>Nº of records</td>
+  <td>2228</td>
+  <td>1338</td>
+ </tr>
+</table>
 
 The .groupby() method allowed us to summarize all the records for each country and year, as well all the fatal cases. The 'fatality_rate' column was created with the result of the division of the fatal cases by the total_cases. For better analysis, I chose to reduce the scope of the analysis to the 1900s and on.
 
@@ -29,11 +42,30 @@ A lineplot based on fatal_cases by year was not very useful. Seeing how there we
 
 This first lineplot showed that there were a good amount of records in all the period, but they got more abundant since the 60s.
 
+![total_cases](https://user-images.githubusercontent.com/110355804/221356540-6fc42fe1-d767-4e08-b3da-949b2e030139.png)
+
 The second lineplot is based on the fatality rate and turned out to be useful. We can see that the fatality rate in Australia is generally bigger than in USA. We also can see that the data has better quality since the 60s, which means that more records were made by that time. For this reason, we narrowed even more the analysis to the 60s and on.
 
-If we saw the mean fatality rate for each country from the year 1960 till 2020, we can note that the fatality rate in Australia is more than three times bigger than in the USA (0.144176 compared to 0.043554).
+![fatality_rate](https://user-images.githubusercontent.com/110355804/221356560-2c28ee52-d15c-42f4-8c0e-6778ea7c8f65.png)
+
+If we saw the mean fatality rate for each country from the year 1960 till 2020, we can note that the fatality rate in Australia is more than three times bigger than in the USA.
+
+<table>
+ <tr>
+  <th></th>
+  <th>USA</th>
+  <th>Australia</th>
+ </tr>
+ <tr>
+  <td>Fatality Rate</td>
+  <td>0.043554</td>
+  <td>0.144176</td>
+ </tr>
+</table>
 
 Trying to understand better, I analysed the mean fatality rate by decade. The first analysis was technically a mistake, since the mean was miscalculated. It was necessary to obtain all the cases, as well all the fatal cases, to correctly calculate the mean fatality rate by decade. The comparison was revealing: in all the decades, the fatality in Australia is several times bigger than in the USA!
+
+![final_fatality_mean](https://user-images.githubusercontent.com/110355804/221356928-83556fa0-1eaa-407f-a8fe-5d0384f4ad28.png)
 
 ## Conclusion
 The situation of Australia is clearly worse than in the USA in terms of fatalities. This can be due several reasons which would require further analysis, but we already answered the hypothesis and could make proper decisions about, for example, how to adequately price a life insurance pertaining to shark attacks in Australia compared to the USA; or, in a scientific investigation, we would have a reason to deepen our analysis.
