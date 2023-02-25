@@ -73,3 +73,5 @@ The division of the cases by decade opened the possibility of analysing the data
 
 ## Conclusion
 The situation of Australia is clearly worse than in the USA in terms of fatalities. This can be due several reasons which would require further analysis, but we already answered the hypothesis and could make proper decisions about, for example, how to adequately price a life insurance pertaining to shark attacks in Australia compared to the USA; or, in a scientific investigation, we would have a reason to deepen our analysis.
+
+![cat_with_blahaj](https://user-images.githubusercontent.com/110355804/221363124-c450cff9-b4bc-4a79-8faa-858232de8123.gif)
