@@ -21,7 +21,7 @@ A simple code showed the .value_counts() and unique values for all the columns, 
 No duplicated rows were found after the exclusion of the empty ones.
 
 ## Analysing the Hypothesis
-With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that we have a good amount of reports to analyse.there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
+With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that we have a good amount of reports to analyse there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
 
 <table>
  <tr>
