@@ -16,12 +16,10 @@ The .describe() method showed us that most of the records were from the last cen
 
 Furthermore, the data is composed of basic data of the attacks, such as the location, date and time, the victim, the shark species that attacked etc.
 
-A simple code showed the .value_counts() and unique values for all the columns, which helped to understand the format of the data in each one.
-
 No duplicated rows were found after the exclusion of the empty ones.
 
 ## Analysing the Hypothesis
-With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that we have a good amount of reports to analyse there were 2228 records in USA and 1338 in Australia, an amount that is easier to analyse than if we had just a few records.
+With the purpose of understanding the fatality of shark attacks in USA and Australia, the first action was to create a new binary column named 'Fatality', which would facilitate to analyse the data originated from the 'Fatal (Y/N)' column. This showed us that we have a good amount of reports to analyse:
 
 <table>
  <tr>
@@ -38,7 +36,7 @@ With the purpose of understanding the fatality of shark attacks in USA and Austr
 
 The .groupby() method allowed us to summarize all the records for each country and year, as well all the fatal cases. The 'fatality_rate' column was created with the result of the division of the fatal cases by the total_cases. For better analysis, I chose to reduce the scope of the analysis to the 1900s and on.
 
-A lineplot based on fatal_cases by year was not very useful. Seeing how there were absolute cases bigger in some years than others would not help the analysis. For that reason, I made two others lineplots: the first one registered the total cases, so we could see if there were a good amount of records for each country by years. This is important since we do not want to compare a country in a given year that has only few records with other that has thousands of it.
+A lineplot based on fatal_cases by year was not very useful. Seeing how there were absolute cases greater in some years than others would not help the analysis. For that reason, I made two others lineplots: the first one registered the total cases, so we could see if there were a good amount of records for each country by years. This is important since we do not want to compare a country in a given year that has only few records with other that has thousands of it.
 
 This first lineplot showed that there were a good amount of records in all the period, but they got more abundant since the 60s.
 
